@@ -1,0 +1,47 @@
+.block-content{
+    background-color: white;
+    height: 100vh;
+    border-radius: 8px;
+}
+
+.card-custom{
+    width: 100%;
+    /* height: 260px; */
+    background-color: #f8f8f8 !important;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #BBBBBB;
+}
+
+.card-custom .col-lg-6{
+    padding: 0;
+   }
+.card-custom img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.card-custom .heart-icon{
+    color:#BBBBBB;
+    cursor: pointer;
+    transition: all 0.4s;
+   
+}
+
+.card-custom .heart-icon:hover{
+    color:#3c5999;
+}
+
+
+.card-custom .like-block{
+    color:#BBBBBB;
+    cursor: pointer;
+    transition: all 0.4s;
+   
+}
+.card-custom .like-block:hover .heart-icon{
+    color:#3c5999;
+   
+}
