@@ -1,3 +1,10 @@
+/* value css */
+:root {
+    --global-color: #3C5999;
+ }
+
+/* home page */
+
 .block-content{
     background-color: white;
     height: 100vh;
@@ -10,6 +17,8 @@
     background-color: #f8f8f8 !important;
     border-radius: 6px;
     box-shadow: 0 0 10px #BBBBBB;
+    cursor: pointer;
+    position: relative;
 }
 
 .card-custom .col-lg-6{
@@ -31,7 +40,7 @@
 }
 
 .card-custom .heart-icon:hover{
-    color:#3c5999;
+    color:var(--global-color);
 }
 
 
@@ -42,6 +51,105 @@
    
 }
 .card-custom .like-block:hover .heart-icon{
-    color:#3c5999;
+    color:var(--global-color);
    
+}
+
+
+.block-content .row {
+    margin: 0 !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+
+body, input, button {
+ font-size: 13px;
+ 
+}
+
+button {
+ cursor: pointer;
+}
+
+.custom-panigation{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 768px) {
+    .custom-panigation{
+       display: none !important;
+    }
+}
+
+
+/* home page authentication */
+
+@media screen and (max-width: 556px) {
+   .logout_text{
+    display: none;
+   }
+   .block-user{
+    display: none !important;
+   }
+   .menu-bar{
+    display:inline-block;
+   }
+   
+}
+@media screen and (min-width: 556px) {
+ 
+    .menu-bar{
+     display: none !important;
+    }
+    
+ }
+ 
+
+.nav_custom a{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #828282;
+    
+}
+.nav_custom a:link{
+    color: var(--global-color);
+    
+}
+.nav_custom a:hover{
+    
+    color: var(--global-color);
+    
+}
+.nav_custom .active{
+    
+    color: var(--global-color);
+    
+}
+
+.btn-group-custom button{
+   text-transform: uppercase;
+   border: 1px solid var(--global-color);
+   background-color: white;
+   color: var(--global-color);
+   font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+}
+.btn-group-custom button:hover{
+    background-color: var(--global-color);
+}
+.btn-group-custom .active{
+    background-color: var(--global-color);
+    color: white;
 }
