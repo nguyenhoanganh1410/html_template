@@ -2,7 +2,6 @@
 :root {
     --global-color: #3C5999;
  }
-
 /* home page */
 
 .block-content{
@@ -60,22 +59,6 @@
     margin: 0 !important;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  box-sizing: border-box;
-}
-
-
-body, input, button {
- font-size: 13px;
- 
-}
-
-button {
- cursor: pointer;
-}
 
 .custom-panigation{
     position: absolute;
@@ -118,7 +101,6 @@ button {
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
-
     color: #828282;
     
 }
